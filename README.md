@@ -1,6 +1,8 @@
 # KAGS
 This is the repository for the Knowledge Augmented Generation System. It contains all its code and dataset.
 
+![Project Logo](one.png)
+
 Files are name according to their process.
 For KAGS, 
 - The retrieval is given in kgr.py
