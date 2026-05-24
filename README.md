@@ -1,6 +1,6 @@
-# KAGS — Knowledge Augmented Generation System
+# KAGS — Knowledge graph Augmented Generation System
 
-Implementation and experiments for **Knowledge Augmented Generation (KAG)** and baseline RAG methods on multi-hop and open-domain QA benchmarks.
+Implementation and experiments for **Knowledge graph Augmented Generation System (KAGS)** and baseline RAG methods on multi-hop and open-domain QA benchmarks.
 
 Repository: [github.com/darkpheonix2/KAGS](https://github.com/darkpheonix2/KAGS)
 
