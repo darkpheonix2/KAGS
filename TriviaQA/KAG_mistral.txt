@@ -1,0 +1,48 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 4
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 6)
+
+First few questions:
+0    What food was named after a composer by the Fr...
+1    Which body of water separates Alaska from Russia?
+2    Raratonga is the most populous island of which...
+
+Rows after filtering NaN predicted_answer: 495 (removed 5 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+Exception at row 475 calculating faithfulness: CUDA out of memory. Tried to allocate 3.38 GiB. GPU 3 has a total capacity of 44.34 GiB of which 3.00 GiB is free. Including non-PyTorch memory, this process has 6.73 GiB memory in use. Process 554794 has 18.33 GiB memory in use. Process 560041 has 16.26 GiB memory in use. Of the allocated memory 6.25 GiB is allocated by PyTorch, and 172.62 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.496296
+Answer Relevance:                      0.332662
+Precision:                             0.830437
+Recall:                                0.817082
+F1 Score:                              0.817251
+Token Level Accuracy:                  0.153040
+Fuzzy Based Accuracy:                  0.030881
+Meaning Based Accuracy:                0.506505
+Meaning Based Accuracy (Controlled):   0.488654
+================================================================================
+
+Results saved to: Output_Data/KAG_Mistral_metrics.csv
+Log saved to: KAG_evaluation_results_mistral.txt

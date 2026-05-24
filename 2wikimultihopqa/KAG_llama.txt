@@ -1,0 +1,29 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 2
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 7)
+
+First few questions:
+0          Who is the father-in-law of Queen Hyojeong?
+1    Which one was established first, Grouplogic or...
+2    Where was the place of death of the director o...
+
+Rows after filtering NaN predicted_answer: 498 (removed 2 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...

@@ -1,0 +1,46 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 3
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 6)
+
+First few questions:
+0    What food was named after a composer by the Fr...
+1    Which body of water separates Alaska from Russia?
+2    Raratonga is the most populous island of which...
+
+Rows after filtering NaN predicted_answer: 497 (removed 3 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.497317
+Answer Relevance:                      0.444950
+Precision:                             0.829406
+Recall:                                0.817337
+F1 Score:                              0.816781
+Token Level Accuracy:                  0.165473
+Fuzzy Based Accuracy:                  0.074863
+Meaning Based Accuracy:                0.414670
+Meaning Based Accuracy (Controlled):   0.438420
+================================================================================
+
+Results saved to: Output_Data/KAG_llama_metrics.csv
+Log saved to: KAG_evaluation_results_llama.txt

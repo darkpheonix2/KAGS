@@ -1,0 +1,46 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 2
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 7)
+
+First few questions:
+0          Who is the father-in-law of Queen Hyojeong?
+1    Which one was established first, Grouplogic or...
+2    Where was the place of death of the director o...
+
+Rows after filtering NaN predicted_answer: 481 (removed 19 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.4012
+Answer Relevance:                      0.3312
+Precision:                             0.7791
+Recall:                                0.8554
+F1 Score:                              0.8087
+Token Level Accuracy:                  0.2974
+Fuzzy Based Accuracy:                  0.4790
+Meaning Based Accuracy:                0.3195
+Meaning Based Accuracy (Controlled):   0.3838
+================================================================================
+
+Results saved to: Output_Data/KAG_Mistral_metrics.csv
+Log saved to: KAG_evaluation_results_mistral.txt

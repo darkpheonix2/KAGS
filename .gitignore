@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# Jupyter (notebooks may contain old secrets — keep local only)
+*.ipynb
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets (never commit)
+*credentials*
+*secrets*
+
+# Files over GitHub 100 MB limit — host separately
+NaturalQA/biencoder-nq-dev.json
+TriviaQA/triviaqa-dev_new.json
+NaturalQA/GraphRAG_Retrieval_Output.csv
+NaturalQA/GraphRAG_triplets_checkpoint.csv
+NaturalQA/Refined_triplets_checkpoint.csv
+
+# Optional: large generated outputs (uncomment if you only want code in git)
+# **/AblationStudy/
+# **/Output_Data/
+# **/*_results.csv
+# **/Adaptive_RAG_*.csv
+# **/KAG_*.csv
+# **/Hybrid_RAG_*.csv

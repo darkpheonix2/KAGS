@@ -1,0 +1,67 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 2
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 9)
+
+First few questions:
+0    Which county was absorbed into Cambridgeshire ...
+1    Which was the first country to give the vote t...
+2    "In the poem by Tennyson, the line ""I am here...
+Columns: Index(['question', 'combined_positive', 'answers',
+       'positive_context_token_count', 'chunks', 'retrieved_context',
+       'predicted_answer_mistral', 'predicted_answer_llama',
+       'predicted_answer_flan_t5'],
+      dtype='object')
+
+Rows after filtering NaN predicted_answer: 498 (removed 2 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+Exception at row 94 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 110 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 162 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 189 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 237 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 252 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 397 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 470 calculating retrieval metrics: 'float' object is not iterable
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.580321
+Answer Relevance:                      0.339642
+Precision:                             0.967495
+Recall:                                0.976634
+F1 Score:                              0.970682
+Token Level Accuracy:                  0.116666
+Fuzzy Based Accuracy:                  0.078145
+Meaning Based Accuracy:                4.196753
+Meaning Based Accuracy (Controlled):   0.311095
+================================================================================
+
+Results saved to: Output_Data/Without_retrieval_Flan_t5_metrics.csv
+Log saved to: Without_retrieval_evaluation_results_flan_t5.txt

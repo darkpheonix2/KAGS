@@ -1,0 +1,14 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 1
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 7)
+
+First few questions:
+0          what is the movie birth of a nation about
+1    zen and the art of motorcycle maintenance bikes
+2          who is the lt. governor of south carolina

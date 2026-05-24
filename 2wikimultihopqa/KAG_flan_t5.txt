@@ -1,0 +1,46 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 2
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 7)
+
+First few questions:
+0          Who is the father-in-law of Queen Hyojeong?
+1    Which one was established first, Grouplogic or...
+2    Where was the place of death of the director o...
+
+Rows after filtering NaN predicted_answer: 496 (removed 4 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.314516
+Answer Relevance:                      0.225931
+Precision:                             0.780131
+Recall:                                0.855423
+F1 Score:                              0.809208
+Token Level Accuracy:                  0.228017
+Fuzzy Based Accuracy:                  0.368108
+Meaning Based Accuracy:                0.267480
+Meaning Based Accuracy (Controlled):   0.404943
+================================================================================
+
+Results saved to: Output_Data/KAG_Flan_t5_metrics.csv
+Log saved to: KAG_evaluation_results_flan_t5.txt

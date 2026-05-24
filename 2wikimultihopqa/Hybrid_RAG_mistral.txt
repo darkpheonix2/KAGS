@@ -1,0 +1,46 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 4
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 8)
+
+First few questions:
+0    Which film has the director who was born later...
+1                 When was Patrick Berg's father born?
+2         Where was the director of film Axiliad born?
+
+Rows after filtering NaN predicted_answer: 474 (removed 26 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.443038
+Answer Relevance:                      0.361648
+Precision:                             0.816993
+Recall:                                0.973903
+F1 Score:                              0.884584
+Token Level Accuracy:                  0.278433
+Fuzzy Based Accuracy:                  0.474730
+Meaning Based Accuracy:                0.293186
+Meaning Based Accuracy (Controlled):   0.348982
+================================================================================
+
+Results saved to: Output_Data/Hybrid_RAG_Mistral_metrics.csv
+Log saved to: Hybrid_RAG_evaluation_results_mistral.txt

@@ -1,0 +1,50 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 4
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 8)
+
+First few questions:
+0          what is the movie birth of a nation about
+1    zen and the art of motorcycle maintenance bikes
+2          who is the lt. governor of south carolina
+
+Rows after filtering NaN predicted_answer: 495 (removed 5 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+Exception at row 59 calculating faithfulness: CUDA out of memory. Tried to allocate 3.53 GiB. GPU 1 has a total capacity of 44.34 GiB of which 3.00 GiB is free. Process 3486947 has 3.90 GiB memory in use. Including non-PyTorch memory, this process has 37.42 GiB memory in use. Of the allocated memory 33.25 GiB is allocated by PyTorch, and 3.87 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 304 calculating faithfulness: CUDA out of memory. Tried to allocate 6.79 GiB. GPU 2 has a total capacity of 44.34 GiB of which 3.62 GiB is free. Process 3749830 has 28.90 GiB memory in use. Including non-PyTorch memory, this process has 11.81 GiB memory in use. Of the allocated memory 11.13 GiB is allocated by PyTorch, and 382.03 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 312 calculating faithfulness: CUDA out of memory. Tried to allocate 9.27 GiB. GPU 2 has a total capacity of 44.34 GiB of which 3.62 GiB is free. Process 3749830 has 28.90 GiB memory in use. Including non-PyTorch memory, this process has 11.81 GiB memory in use. Of the allocated memory 4.67 GiB is allocated by PyTorch, and 6.83 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 417 calculating faithfulness: CUDA out of memory. Tried to allocate 3.25 GiB. GPU 1 has a total capacity of 44.34 GiB of which 2.67 GiB is free. Process 3486947 has 4.23 GiB memory in use. Including non-PyTorch memory, this process has 37.42 GiB memory in use. Of the allocated memory 31.18 GiB is allocated by PyTorch, and 5.93 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 452 calculating faithfulness: CUDA out of memory. Tried to allocate 3.77 GiB. GPU 0 has a total capacity of 44.34 GiB of which 550.62 MiB is free. Process 1305930 has 1.34 GiB memory in use. Including non-PyTorch memory, this process has 42.44 GiB memory in use. Of the allocated memory 41.08 GiB is allocated by PyTorch, and 1.06 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.6212
+Answer Relevance:                      0.4060
+Precision:                             0.9879
+Recall:                                0.9890
+F1 Score:                              0.9874
+Token Level Accuracy:                  0.7001
+Fuzzy Based Accuracy:                  0.7002

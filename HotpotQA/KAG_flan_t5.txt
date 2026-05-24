@@ -1,0 +1,46 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 4
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 10)
+
+First few questions:
+0    Are Freakonomics and In the Realm of the Hacke...
+1    Alfred Balk served as the secretary of the Com...
+2    Which Australian city founded in 1838 contains...
+
+Rows after filtering NaN predicted_answer: 494 (removed 6 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.360324
+Answer Relevance:                      0.171640
+Precision:                             0.347616
+Recall:                                0.791646
+F1 Score:                              0.477741
+Token Level Accuracy:                  0.229068
+Fuzzy Based Accuracy:                  0.312229
+Meaning Based Accuracy:                0.244534
+Meaning Based Accuracy (Controlled):   0.432342
+================================================================================
+
+Results saved to: Ouput_Data/KAG_Flan_t5_metrics.csv
+Log saved to: KAG_evaluation_results_Flan_t5.txt

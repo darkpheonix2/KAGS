@@ -1,0 +1,40 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 3
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 5)
+
+First few questions:
+0    Which county was absorbed into Cambridgeshire ...
+1    Which was the first country to give the vote t...
+2    "In the poem by Tennyson, the line ""I am here...
+
+Rows after filtering NaN predicted_answer: 491 (removed 9 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.255601
+Answer Relevance:                      0.254498
+Precision:                             0.911703
+Recall:                                0.429722
+F1 Score:                              0.576997
+Token Level Accuracy:                  0.095338
+Fuzzy Based Accuracy:                  0.012338

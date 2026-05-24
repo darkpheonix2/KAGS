@@ -1,0 +1,48 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 3
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 7)
+
+First few questions:
+0    when did the united kingdom join the united na...
+1       who sings you 'll never walk alone in carousel
+2    when does the diary of a wimpy kid the getaway...
+
+Rows after filtering NaN predicted_answer: 489 (removed 11 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+Exception at row 229 calculating faithfulness: CUDA out of memory. Tried to allocate 3.54 GiB. GPU 0 has a total capacity of 44.34 GiB of which 126.62 MiB is free. Process 1305930 has 1.40 GiB memory in use. Including non-PyTorch memory, this process has 42.80 GiB memory in use. Of the allocated memory 39.97 GiB is allocated by PyTorch, and 2.52 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.6186
+Answer Relevance:                      0.4310
+Precision:                             0.9191
+Recall:                                0.9918
+F1 Score:                              0.9524
+Token Level Accuracy:                  0.6578
+Fuzzy Based Accuracy:                  0.6902
+Meaning Based Accuracy:                0.4125
+Meaning Based Accuracy (Controlled):   0.4857
+================================================================================
+
+Results saved to: Output_Data/Hybrid_RAG_Mistral_metrics.csv
+Log saved to: HybridRAG_evaluation_results_mistral.txt

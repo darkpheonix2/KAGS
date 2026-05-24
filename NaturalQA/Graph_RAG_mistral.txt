@@ -1,0 +1,46 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 1
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 5)
+
+First few questions:
+0          what is the movie birth of a nation about
+1    zen and the art of motorcycle maintenance bikes
+2          who is the lt. governor of south carolina
+
+Rows after filtering NaN predicted_answer: 482 (removed 18 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.2230
+Answer Relevance:                      0.1288
+Precision:                             0.8824
+Recall:                                0.5418
+F1 Score:                              0.6612
+Token Level Accuracy:                  0.1538
+Fuzzy Based Accuracy:                  0.2415
+Meaning Based Accuracy:                0.3082
+Meaning Based Accuracy (Controlled):   0.3762
+================================================================================
+
+Results saved to: Output_Data/Graph_RAG_Mistral_metrics.csv
+Log saved to: GraphRAG_evaluation_results_mistral.txt

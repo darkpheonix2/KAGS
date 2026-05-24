@@ -1,0 +1,18 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 1
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 10)
+
+First few questions:
+0        When did Emperor Houshao Of Han's father die?
+1    Was Alan Haynes or Marie-Georges-Gérard-Léon L...
+2    Do both directors of films Anne Of The Indies ...
+
+Rows after filtering NaN predicted_answer: 483 (removed 17 rows)
+
+Loading LLM and tokenizer...

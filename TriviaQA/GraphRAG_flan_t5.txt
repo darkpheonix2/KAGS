@@ -1,0 +1,50 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 2
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 7)
+
+First few questions:
+0    Which county was absorbed into Cambridgeshire ...
+1    Which was the first country to give the vote t...
+2    "In the poem by Tennyson, the line ""I am here...
+Columns: Index(['question', 'combined_positive', 'answers', 'retrieved_triplets',
+       'predicted_answer_mistral', 'predicted_answer_llama',
+       'predicted_answer_flan_t5'],
+      dtype='object')
+
+Rows after filtering NaN predicted_answer: 500 (removed 0 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.218000
+Answer Relevance:                      0.253388
+Precision:                             0.911335
+Recall:                                0.429266
+F1 Score:                              0.576435
+Token Level Accuracy:                  0.027564
+Fuzzy Based Accuracy:                  0.030747
+Meaning Based Accuracy:                0.307260
+Meaning Based Accuracy (Controlled):   0.220195
+================================================================================
+
+Results saved to: Output_Data/GraphRAG_Flan_t5_metrics.csv
+Log saved to: GraphRAG_evaluation_results_flan_t5.txt

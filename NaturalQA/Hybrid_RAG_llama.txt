@@ -1,0 +1,50 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 3
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 8)
+
+First few questions:
+0    when did the united kingdom join the united na...
+1       who sings you 'll never walk alone in carousel
+2    when does the diary of a wimpy kid the getaway...
+
+Rows after filtering NaN predicted_answer: 489 (removed 11 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+Exception at row 126 calculating faithfulness: CUDA out of memory. Tried to allocate 13.14 GiB. GPU 0 has a total capacity of 44.34 GiB of which 11.21 GiB is free. Process 1305930 has 1.40 GiB memory in use. Including non-PyTorch memory, this process has 31.72 GiB memory in use. Of the allocated memory 22.08 GiB is allocated by PyTorch, and 9.34 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 229 calculating faithfulness: CUDA out of memory. Tried to allocate 14.21 GiB. GPU 0 has a total capacity of 44.34 GiB of which 9.56 GiB is free. Process 1305930 has 1.40 GiB memory in use. Including non-PyTorch memory, this process has 33.37 GiB memory in use. Of the allocated memory 26.10 GiB is allocated by PyTorch, and 6.96 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.6104
+Answer Relevance:                      0.3580
+Precision:                             0.9195
+Recall:                                0.9928
+F1 Score:                              0.9531
+Token Level Accuracy:                  0.6661
+Fuzzy Based Accuracy:                  0.6636
+Meaning Based Accuracy:                0.4522
+Meaning Based Accuracy (Controlled):   0.5844
+================================================================================
+
+Results saved to: Output_Data/Hybrid_RAG_llama_metrics.csv
+Log saved to: Hybrid_evaluation_results_llama.txt

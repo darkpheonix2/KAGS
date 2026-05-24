@@ -1,0 +1,958 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 4
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 10)
+
+First few questions:
+0        When did Emperor Houshao Of Han's father die?
+1    Was Alan Haynes or Marie-Georges-Gérard-Léon L...
+2    Do both directors of films Anne Of The Indies ...
+
+Rows after filtering NaN predicted_answer: 488 (removed 12 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+Exception at row 0 calculating faithfulness: CUDA out of memory. Tried to allocate 1018.00 MiB. GPU 3 has a total capacity of 44.34 GiB of which 112.62 MiB is free. Process 382953 has 40.33 GiB memory in use. Including non-PyTorch memory, this process has 3.89 GiB memory in use. Of the allocated memory 3.56 GiB is allocated by PyTorch, and 26.00 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 1 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 2 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 3 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 4 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 5 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 6 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 7 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 8 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 9 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 10 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 11 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 13 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 14 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 15 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 16 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 17 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 18 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 19 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 20 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 21 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 22 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 23 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 24 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 25 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 26 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 27 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 28 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 29 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 30 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 31 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 33 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 34 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 35 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 36 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 37 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 38 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 39 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 40 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 41 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 43 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 44 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 45 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 47 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 48 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 49 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 50 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 51 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 52 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 53 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 54 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 55 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 56 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 57 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 58 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 59 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 60 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 61 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 62 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 63 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 65 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 66 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 67 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 68 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 69 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 70 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 71 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 72 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 73 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 74 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 75 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 76 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 77 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 78 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 79 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 80 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 81 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 82 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 83 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 84 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 86 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 88 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 89 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 90 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 91 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 93 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 94 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 95 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 96 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 97 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 98 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 99 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 100 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 101 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 102 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 103 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 104 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 105 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 106 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 107 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 108 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 109 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 110 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 111 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 112 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 114 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 115 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 117 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 118 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 119 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 120 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 121 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 122 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 123 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 124 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 125 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 126 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 127 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 128 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 129 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 130 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 131 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 132 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 133 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 135 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 136 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 137 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 138 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 139 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 140 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 141 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 142 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 143 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 144 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 145 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 146 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 147 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 148 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 149 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 150 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 152 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 153 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 154 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 155 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 156 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 157 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 159 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 161 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 162 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 163 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 164 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 165 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 166 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 167 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 168 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 169 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 170 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 171 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 173 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 174 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 175 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 177 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 178 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 179 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 180 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 181 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 183 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 184 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 185 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 186 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 187 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 188 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 189 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 190 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 191 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 192 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 193 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 194 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 195 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 196 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 197 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 198 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 199 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 200 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 201 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 202 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 203 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 204 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 205 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 207 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 208 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 209 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 210 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 211 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 212 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 213 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 214 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 215 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 216 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 217 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 218 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 219 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 220 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 221 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 224 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 226 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 227 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 228 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 229 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 230 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 231 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 232 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 234 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 235 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 236 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 237 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 239 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 241 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 242 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 243 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 244 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 245 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 246 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 248 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 249 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 250 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 251 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 252 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 253 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 254 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 255 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 258 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 259 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 260 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 261 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 262 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 263 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 264 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 265 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 266 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 267 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 268 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 269 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 270 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 271 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 272 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 273 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 274 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 275 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 276 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 277 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 278 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 279 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 280 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 281 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 282 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 283 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 284 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 285 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 286 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 288 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 289 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 290 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 291 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 292 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 293 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 294 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 295 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 296 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 297 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 298 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 299 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 300 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 301 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 302 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 303 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 304 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 305 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 306 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 307 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 308 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 309 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 311 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 312 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 313 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 314 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 315 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 316 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 318 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 319 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 320 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 321 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 322 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 323 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 324 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 325 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 326 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 327 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 328 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 329 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 331 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 332 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 333 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 334 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 335 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 336 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 337 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 338 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 339 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 340 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 341 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 342 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 344 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 345 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 346 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 347 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 348 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 349 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 350 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 351 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 352 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 354 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 355 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 356 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 357 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 358 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 359 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 360 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 362 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 363 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 364 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 365 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 366 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 367 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 369 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 370 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 371 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 372 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 373 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 374 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 375 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 376 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 377 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 378 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 379 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 380 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 381 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 382 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 383 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 384 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 386 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 387 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 388 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 389 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 390 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 391 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 392 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 393 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 394 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 396 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 397 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 398 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 399 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 400 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 401 calculating faithfulness: CUDA out of memory. Tried to allocate 5.77 GiB. GPU 1 has a total capacity of 44.34 GiB of which 1.25 GiB is free. Process 1305930 has 1.40 GiB memory in use. Process 2898843 has 31.18 GiB memory in use. Including non-PyTorch memory, this process has 10.47 GiB memory in use. Of the allocated memory 10.02 GiB is allocated by PyTorch, and 153.82 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 402 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 403 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 404 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 405 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 406 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 407 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 408 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 409 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 410 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 411 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 412 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 413 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 414 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 415 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 416 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 417 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 418 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 419 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 420 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 421 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 422 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 423 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 425 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 426 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 427 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 428 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 429 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 430 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 431 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 432 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 433 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 434 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 435 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 436 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 437 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 439 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 440 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 441 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 442 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 443 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 444 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 445 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 446 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 447 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 448 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 449 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 450 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 451 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 452 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 453 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 454 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 455 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 456 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 457 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 458 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 459 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 460 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 461 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 462 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 463 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 464 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 465 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 466 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 467 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 468 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 469 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 470 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 471 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 472 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 473 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 475 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 476 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 477 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 478 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 479 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 480 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 481 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 482 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 483 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 484 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 485 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 486 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 487 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 488 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 489 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 491 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 492 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 493 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 494 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 495 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 496 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 497 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 498 calculating retrieval metrics: 'float' object is not iterable
+
+Exception at row 499 calculating retrieval metrics: 'float' object is not iterable
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.317281
+Answer Relevance:                      0.691638
+Precision:                             0.047311
+Recall:                                0.062627
+F1 Score:                              0.053705
+Token Level Accuracy:                  0.529674
+Fuzzy Based Accuracy:                  0.724548

@@ -1,0 +1,46 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 1
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 9)
+
+First few questions:
+0        When did Emperor Houshao Of Han's father die?
+1    Was Alan Haynes or Marie-Georges-Gérard-Léon L...
+2    Do both directors of films Anne Of The Indies ...
+
+Rows after filtering NaN predicted_answer: 483 (removed 17 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.424431
+Answer Relevance:                      0.379850
+Precision:                             0.843798
+Recall:                                0.967586
+F1 Score:                              0.896041
+Token Level Accuracy:                  0.350518
+Fuzzy Based Accuracy:                  0.527742
+Meaning Based Accuracy:                0.289752
+Meaning Based Accuracy (Controlled):   0.392788
+================================================================================
+
+Results saved to: Output_Data/Vector_RAG_llama_metrics.csv
+Log saved to: Vector_evaluation_results_llama.txt

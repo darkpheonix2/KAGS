@@ -1,0 +1,48 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 3
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 7)
+
+First few questions:
+0          what is the movie birth of a nation about
+1    zen and the art of motorcycle maintenance bikes
+2          who is the lt. governor of south carolina
+
+Rows after filtering NaN predicted_answer: 493 (removed 7 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+Exception at row 59 calculating faithfulness: CUDA out of memory. Tried to allocate 3.53 GiB. GPU 0 has a total capacity of 44.34 GiB of which 3.45 GiB is free. Process 1305930 has 1.34 GiB memory in use. Including non-PyTorch memory, this process has 39.53 GiB memory in use. Of the allocated memory 38.24 GiB is allocated by PyTorch, and 1010.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 312 calculating faithfulness: CUDA out of memory. Tried to allocate 2.32 GiB. GPU 2 has a total capacity of 44.34 GiB of which 255.06 MiB is free. Process 100235 has 10.82 GiB memory in use. Process 3320606 has 8.31 GiB memory in use. Including non-PyTorch memory, this process has 24.94 GiB memory in use. Of the allocated memory 23.84 GiB is allocated by PyTorch, and 810.71 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 417 calculating faithfulness: CUDA out of memory. Tried to allocate 3.25 GiB. GPU 2 has a total capacity of 44.34 GiB of which 3.04 GiB is free. Process 3320606 has 8.92 GiB memory in use. Including non-PyTorch memory, this process has 32.37 GiB memory in use. Of the allocated memory 31.57 GiB is allocated by PyTorch, and 504.34 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Exception at row 452 calculating faithfulness: CUDA out of memory. Tried to allocate 15.06 GiB. GPU 0 has a total capacity of 44.34 GiB of which 14.48 GiB is free. Process 1305930 has 1.34 GiB memory in use. Including non-PyTorch memory, this process has 28.51 GiB memory in use. Of the allocated memory 26.43 GiB is allocated by PyTorch, and 1.77 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.5984
+Answer Relevance:                      0.4154
+Precision:                             0.9882
+Recall:                                0.9893
+F1 Score:                              0.9878
+Token Level Accuracy:                  0.6551
+Fuzzy Based Accuracy:                  0.6899

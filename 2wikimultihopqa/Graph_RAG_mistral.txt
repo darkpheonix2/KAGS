@@ -1,0 +1,48 @@
+================================================================================
+RAG Evaluation Pipeline
+================================================================================
+
+CUDA device count: 2
+Current CUDA device: 0
+
+Loading data from CSV...
+Initial data shape: (500, 6)
+
+First few questions:
+0        When did Emperor Houshao Of Han's father die?
+1    Was Alan Haynes or Marie-Georges-Gérard-Léon L...
+2    Do both directors of films Anne Of The Indies ...
+
+Rows after filtering NaN predicted_answer: 488 (removed 12 rows)
+
+Loading LLM and tokenizer...
+Model loaded successfully!
+
+Initializing metric columns...
+
+Calculating metrics for each row...
+
+Exception at row 95 calculating faithfulness: CUDA out of memory. Tried to allocate 14.00 MiB. GPU 1 has a total capacity of 44.34 GiB of which 11.06 MiB is free. Process 4155176 has 35.22 GiB memory in use. Process 21944 has 2.68 GiB memory in use. Including non-PyTorch memory, this process has 6.41 GiB memory in use. Of the allocated memory 6.07 GiB is allocated by PyTorch, and 34.09 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+================================================================================
+Metric calculation complete!
+================================================================================
+
+Cleaning data for final statistics...
+
+================================================================================
+FINAL RESULTS - Average Metrics
+================================================================================
+Faithfulness:                          0.258197
+Answer Relevance:                      0.261502
+Precision:                             0.913910
+Recall:                                0.547085
+F1 Score:                              0.679335
+Token Level Accuracy:                  0.245323
+Fuzzy Based Accuracy:                  0.369518
+Meaning Based Accuracy:                0.366373
+Meaning Based Accuracy (Controlled):   0.443636
+================================================================================
+
+Results saved to: Output_Data/Graph_RAG_Mistral_metrics.csv
+Log saved to: Graph_RAG_evaluation_results_mistral.txt
