@@ -2,8 +2,6 @@
 
 Implementation and experiments for **Knowledge graph Augmented Generation System (KAGS)** and baseline RAG methods on multi-hop and open-domain QA benchmarks.
 
-Repository: [github.com/darkpheonix2/KAGS](https://github.com/darkpheonix2/KAGS)
-
 ## Overview
 
 KAGS combines **knowledge-graph construction**, **hybrid vector + graph retrieval**, and **LLM answer generation** to answer complex questions. The codebase also includes baselines (Vector RAG, Hybrid RAG, Adaptive RAG, Graph RAG) and evaluation scripts across four datasets.
