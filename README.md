@@ -165,13 +165,6 @@ Some raw datasets and checkpoint files exceed GitHub’s file size limit and are
 
 Place subsampled test CSVs (e.g. `test_subsampled.csv`) in the appropriate folder as referenced by each script.
 
-## Citation
-
-If you use this code, please cite the associated KAGS paper / supplemental material (`KAGS (Supplemental Material).pdf` in prior releases).
-
-## License
-
-Add your license here (e.g. MIT, Apache-2.0) before public release.
 
 ## Contributing
 
@@ -179,4 +172,4 @@ Add your license here (e.g. MIT, Apache-2.0) before public release.
 2. Create a feature branch  
 3. Open a pull request with a clear description of changes  
 
-Issues and pull requests are welcome on [GitHub](https://github.com/darkpheonix2/KAGS/issues).
+Issues and pull requests are welcome.
